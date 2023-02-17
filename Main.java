@@ -1,20 +1,16 @@
 public class Main {
   public static void main(String[] args) {
-    Hero h = new Hero();
-    h.name = "ミナト";
-    h.hp = 100;
+    Hero h1 = new Hero();
+    Matango m1 = new Matango('A');
+    PoisonMatango pm1 = new PoisonMatango('A');
 
-    Matango m1 = new Matango();
-    m1.hp = 50;
-    m1.suffix = 'A';
+    System.out.println(h1.name);
+    System.out.println(h1.getHp());
 
-    Matango m2 = new Matango();
-    m2.hp = 48;
-    m2.suffix = 'B';
+    m1.attack(h1);
+    System.out.println(h1.getHp());
 
-    h.slip();
-    m1.run();
-    m2.run();
-    h.run();
+    pm1.attack(h1);
+    System.out.println(h1.getHp());
   }
 }
