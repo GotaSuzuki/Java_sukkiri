@@ -1,16 +1,9 @@
 public class Main {
   public static void main(String[] args) {
-    Hero h1 = new Hero();
-    Matango m1 = new Matango('A');
-    PoisonMatango pm1 = new PoisonMatango('A');
-
-    System.out.println(h1.name);
-    System.out.println(h1.getHp());
-
-    m1.attack(h1);
-    System.out.println(h1.getHp());
-
-    pm1.attack(h1);
-    System.out.println(h1.getHp());
+    Book b1 = new Book("C言語", 2000, "red", "0478");
+    System.out.println(b1.getName());
+    System.out.println(b1.getIsbn());
+    b1.setWeight(15.8);
+    System.out.println(b1.getWeight());
   }
 }
