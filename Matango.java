@@ -11,8 +11,4 @@ public class Matango {
     System.out.println("10のダメージ");
     h.setHp(h.getHp() - 10);
   }
-  
-  void run() {
-    System.out.println("お化けきのこ" + this.suffix + "は逃げ出した");
-  }
 }
